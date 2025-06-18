@@ -1,33 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import ReactMarkdown from 'react-markdown';
+import { FaWhatsapp, FaLinkedin, FaGithub, FaTwitter} from 'react-icons/fa';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const markdown = `
+  # Rahul Gupta
+  Software engineer, photographer and maker of things. I write about tech, trying to better myself and fatherhood. 
+  
+  Based in Bengaluru, India. [More about me](https://rahulob.com/about)
+  ***
+  ## Projects
+  - [Day by day](https://github.com/remarkjs/react-markdown) - A Day by Day visualisation of my life
+  - Calendar of Wisdom - Daily insight and reflections from A Calendar of Wisdom by Leo Tolstoy
+  - Goggins Blocker - A Chrome extension to block unproductive websites featuring David Goggins
+  - Jurnl - A stream of consciousness, ephemeral text editors
+  - Oxygenie - Mac app to check air quality at your current location
+  More projects can be found here
+  ***
+  `;
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+    <div className="app">
+      <ReactMarkdown>
+        {markdown}
+      </ReactMarkdown>
+      <div className='social-links'>
+        <a href="https://github.com/rahulob" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <FaGithub size={32}/>
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <a href="https://twitter.com/rahulob_" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <FaTwitter size={32}/>
         </a>
+        <a href="https://www.linkedin.com/in/rahulob" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <FaLinkedin size={32}/>
+        </a>
+        <a href="https://wa.me/916006077943" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <FaWhatsapp size={32}/>
+        </a>
+
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
