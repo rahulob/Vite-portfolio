@@ -12,8 +12,8 @@ createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <div className="app">
         <Routes>
-          <Route path="/" Component={Home} />
-          <Route path="/about" Component={About} />
+          <Route path="/Vite-portfolio" Component={Home} />
+          <Route path="/Vite-portfolio/about" Component={About} />
           {/* <Route path="/about" element={<Markdown>{AboutMarkdown}</Markdown>} /> */}
           <Route path="*" Component={NotFound} />
         </Routes>
