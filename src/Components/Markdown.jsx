@@ -1,5 +1,5 @@
 import ReactMarkdown from "react-markdown";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Markdown({ children }) {
   const components = {
@@ -21,7 +21,16 @@ function Markdown({ children }) {
     },
   };
 
-  return <ReactMarkdown components={components}>{children}</ReactMarkdown>;
+  return (
+    <div className="markdown">
+      {useLocation().pathname !== "/" && (
+        <Link to="/" className="back-link">
+          ← Back to Home
+        </Link>
+      )}
+      <ReactMarkdown components={components}>{children}</ReactMarkdown>
+    </div>
+  );
 }
 
 export default Markdown;
