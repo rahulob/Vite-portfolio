@@ -7,7 +7,7 @@ function Markdown({ children }) {
       // Check if the link is internal (starts with /)
       if (href && href.startsWith("/")) {
         return (
-          <Link to={href} {...props}>
+          <Link to={`/Vite-portfolio${href}`} {...props}>
             {children}
           </Link>
         );
