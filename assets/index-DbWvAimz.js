@@ -102,4 +102,4 @@ Feel free to reach out if you'd like to collaborate, discuss ideas, or just say 
   [Back to Home](/)
   
   ---
-  `})}Y1.createRoot(document.getElementById("root")).render(_e.jsx(V.StrictMode,{children:_e.jsx(lv,{children:_e.jsxs("div",{className:"app",children:[_e.jsxs(k0,{children:[_e.jsx(Iu,{path:"/",Component:kx}),_e.jsx(Iu,{path:"/about",Component:Ux}),_e.jsx(Iu,{path:"*",Component:Fx})]}),_e.jsx(Jx,{})]})})}));
+  `})}Y1.createRoot(document.getElementById("root")).render(_e.jsx(V.StrictMode,{children:_e.jsx(lv,{children:_e.jsxs("div",{className:"app",children:[_e.jsxs(k0,{children:[_e.jsx(Iu,{path:"/Vite-portfolio",Component:kx}),_e.jsx(Iu,{path:"/Vite-portfolio/about",Component:Ux}),_e.jsx(Iu,{path:"*",Component:Fx})]}),_e.jsx(Jx,{})]})})}));
